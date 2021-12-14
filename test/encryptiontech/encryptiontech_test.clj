@@ -9,5 +9,5 @@
 (use-fixtures :each (f/reasoner :hermit))
 
 (deftest reasonable
-  (is (r/consistent? encryptiontech.encryptiontech/encryptiontech))
-  (is (r/coherent? encryptiontech.encryptiontech/encryptiontech)))
+  (is (r/consistent? ont/encryption))
+  (is (r/coherent? ont/encryption)))
