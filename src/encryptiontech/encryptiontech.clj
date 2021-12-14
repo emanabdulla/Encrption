@@ -35,5 +35,14 @@
 
 (defclass publicKeyEncryption
   :comment "is a cryptographic system that uses pairs of keys. Each pair consists of a public key and a private key"
-:super asymmetric)
+  :super asymmetric)
 
+(defclass threats
+  :comment "potential cause of an unwanted incident, which may result in harm to a system or organization")
+(as-subclasses
+ threats
+ :disjoint
+ (defclass malware
+   :comment "software that is intentionally included or inserted in a system for a harmful purpose")
+ (defclass zoomBombing
+:comment "refers to the unwanted, disruptive intrusion, generally by Internet trolls, into a video-conference call"))
