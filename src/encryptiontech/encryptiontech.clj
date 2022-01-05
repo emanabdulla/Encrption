@@ -53,30 +53,96 @@
   :comment "potential cause of an unwanted incident, which may result in harm to a system or organization")
 
 
- (defclass applicationThreats
-   :comment "Threats relating to discrete software vulnerabilities residing within mobile applications running atop the mobile operating system")
+(defclass applicationThreats
+  :comment "Threats relating to discrete software vulnerabilities residing within mobile applications running atop the mobile operating system")
 (as-subclasses
  applicationThreats
  :disjoint
-
  (defclass conferenceAppThreats
-   
    :comment "")
  (defclass instantMessagingThreats
-   
    :comment "")
- (defclass emailThreats
-   
+(defclass emailThreats
    :comment ""))
 
 
+(defoproperty isThreating)
+
 (defclass zoomBombing
+:super  
+conferenceAppThreats
+(owl-some isThreating conferencApp) 
 :comment "refers to the unwanted, disruptive intrusion, generally by Internet trolls, into a video-conference call")
+
+(defclass spoofing
+:super threats
+:comment "")
+
+(as-subclasses
+spoofing
+:disjoint 
+(defclass deviceSpoofing)
+(defclass contentSpoofing)
+(defclass ActionSpoofing))
+
+
+(defclass tampering
+:super threats
+:comment "")
+
+(as-subclasses
+tampering
+:disjoint 
+(defclass storageTampering)
+(defclass logFilesTampering))
+
+(defclass repudiation
+:super threats
+:comment "")
+
+(as-subclasses
+repudiation
+:disjoint 
+(defclass contentRepudiation)
+(defclass activityRepudiation))
+
+
+(defclass infDisclosure
+:super threats
+:comment "")
+
+(as-subclasses
+ infDisclosure
+:disjoint
+(defclass participantDisclosure)
+(defclass deviceDisclosure)
+(defclass callDataDisclosure))
+
+(defclass denialOfService
+:super threats
+:comment "")
+
+(as-subclasses
+ denialOfService
+:disjoint
+(defclass DoS)
+(defclass DDoS))
+
+(defclass escalationOfPrivilege
+:super threats
+:comment "")
+
+(as-subclasses
+ escalationOfPrivilege
+:disjoint
+(defclass unauthorizedAdminPrivileg)
+(defclass unauthorizedAccess))
 
 
 
 
 (defclass malware
+:super threats
    :comment "software that is intentionally included or inserted in a system for a harmful purpose")
  
 
