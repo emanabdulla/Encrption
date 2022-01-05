@@ -14,15 +14,41 @@
 
 (defclass message
   :comment "a message is a bit of data, which is sent by a sender, to a recipient")
+(defclass software
+:comment "")
 
-(defclass messagingServices)
+(defclass communicationSoftware)
 (as-subclasses
- messagingServices
+ communicationSoftware
  :disjoint
  (defclass email
    :comment "is a method of exchanging messages between people using electronic devices")
  (defclass instantMessaging
-   :comment "is a type of online chat allowing real-time text transmission over the Internet or another computer network"))
+   :comment "is a type of online chat allowing real-time text transmission over the Internet or another computer network")
+(defclass conferencApp
+:comment ""))
+
+(defclass threats
+  :comment "potential cause of an unwanted incident, which may result in harm to a system or organization")
+(as-subclasses
+ threats
+ :disjoint
+ 
+(defclass appThreats
+:comment ""))
+
+
+
+(defclass malware
+   :comment "software that is intentionally included or inserted in a system for a harmful purpose")
+ (defclass zoomBombing
+:comment "refers to the unwanted, disruptive intrusion, generally by Internet trolls, into a video-conference call")
+
+
+
+
+
+
 
 (defclass encryptionTypes)
 (as-subclasses
@@ -37,12 +63,3 @@
   :comment "is a cryptographic system that uses pairs of keys. Each pair consists of a public key and a private key"
   :super asymmetric)
 
-(defclass threats
-  :comment "potential cause of an unwanted incident, which may result in harm to a system or organization")
-(as-subclasses
- threats
- :disjoint
- (defclass malware
-   :comment "software that is intentionally included or inserted in a system for a harmful purpose")
- (defclass zoomBombing
-:comment "refers to the unwanted, disruptive intrusion, generally by Internet trolls, into a video-conference call"))
