@@ -1,0 +1,473 @@
+## This file was created by Tawny-OWL
+## It should not be edited by hand
+Prefix: encryption: <http://www.russet.org.uk/encryptiontech/encryption#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.russet.org.uk/encryptiontech/encryption>
+
+Import: <http://www.purl.org/ontolink/tawny>
+
+Annotations: 
+    <http://www.purl.org/ontolink/tawny#name> "encryption"@en,
+    rdfs:comment "Describing encryption technique for messaging services"@en
+
+AnnotationProperty: <http://www.purl.org/ontolink/tawny#name>
+
+    
+AnnotationProperty: rdfs:comment
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+ObjectProperty: encryption:isThreating
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "isThreating"@en
+    
+    
+Class: encryption:ActionSpoofing
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "ActionSpoofing"@en
+    
+    SubClassOf: 
+        encryption:spoofing
+    
+    
+Class: encryption:DDoS
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "DDoS"@en
+    
+    SubClassOf: 
+        encryption:denialOfService
+    
+    DisjointWith: 
+        encryption:DoS
+    
+    
+Class: encryption:DoS
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "DoS"@en
+    
+    SubClassOf: 
+        encryption:denialOfService
+    
+    DisjointWith: 
+        encryption:DDoS
+    
+    
+Class: encryption:activityRepudiation
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "activityRepudiation"@en
+    
+    SubClassOf: 
+        encryption:repudiation
+    
+    DisjointWith: 
+        encryption:contentRepudiation
+    
+    
+Class: encryption:applicationThreats
+
+    Annotations: 
+        rdfs:comment "Threats relating to discrete software vulnerabilities residing within mobile applications running atop the mobile operating system"@en,
+        <http://www.purl.org/ontolink/tawny#name> "applicationThreats"@en
+    
+    
+Class: encryption:asymmetric
+
+    Annotations: 
+        rdfs:comment "Asymmetric Encryption encrypts and decrypts the data using two separate yet mathematically connected cryptographic keys "@en,
+        <http://www.purl.org/ontolink/tawny#name> "asymmetric"@en
+    
+    SubClassOf: 
+        encryption:encryptionTypes
+    
+    DisjointWith: 
+        encryption:symmetric
+    
+    
+Class: encryption:callDataDisclosure
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "callDataDisclosure"@en
+    
+    SubClassOf: 
+        encryption:infDisclosure
+    
+    
+Class: encryption:communicationSoftware
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "communicationSoftware"@en
+    
+    
+Class: encryption:conferencApp
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "conferencApp"@en,
+        rdfs:comment ""@en
+    
+    SubClassOf: 
+        encryption:communicationSoftware
+    
+    
+Class: encryption:conferenceAppThreats
+
+    Annotations: 
+        rdfs:comment ""@en,
+        <http://www.purl.org/ontolink/tawny#name> "conferenceAppThreats"@en
+    
+    SubClassOf: 
+        encryption:applicationThreats
+    
+    
+Class: encryption:contentRepudiation
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "contentRepudiation"@en
+    
+    SubClassOf: 
+        encryption:repudiation
+    
+    DisjointWith: 
+        encryption:activityRepudiation
+    
+    
+Class: encryption:contentSpoofing
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "contentSpoofing"@en
+    
+    SubClassOf: 
+        encryption:spoofing
+    
+    
+Class: encryption:denialOfService
+
+    Annotations: 
+        rdfs:comment ""@en,
+        <http://www.purl.org/ontolink/tawny#name> "denialOfService"@en
+    
+    SubClassOf: 
+        encryption:threats
+    
+    
+Class: encryption:deviceDisclosure
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "deviceDisclosure"@en
+    
+    SubClassOf: 
+        encryption:infDisclosure
+    
+    
+Class: encryption:deviceSpoofing
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "deviceSpoofing"@en
+    
+    SubClassOf: 
+        encryption:spoofing
+    
+    
+Class: encryption:email
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "email"@en,
+        rdfs:comment "is a method of exchanging messages between people using electronic devices"@en
+    
+    SubClassOf: 
+        encryption:communicationSoftware
+    
+    
+Class: encryption:emailThreats
+
+    Annotations: 
+        rdfs:comment ""@en,
+        <http://www.purl.org/ontolink/tawny#name> "emailThreats"@en
+    
+    SubClassOf: 
+        encryption:applicationThreats
+    
+    
+Class: encryption:encryptionTypes
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "encryptionTypes"@en
+    
+    
+Class: encryption:escalationOfPrivilege
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "escalationOfPrivilege"@en,
+        rdfs:comment ""@en
+    
+    SubClassOf: 
+        encryption:threats
+    
+    
+Class: encryption:facebookMessanger
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "facebookMessanger"@en,
+        rdfs:comment ""@en
+    
+    SubClassOf: 
+        encryption:instantMessaging
+    
+    
+Class: encryption:infDisclosure
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "infDisclosure"@en,
+        rdfs:comment ""@en
+    
+    SubClassOf: 
+        encryption:threats
+    
+    
+Class: encryption:instantMessaging
+
+    Annotations: 
+        rdfs:comment "is a type of online chat allowing real-time text transmission over the Internet or another computer network"@en,
+        <http://www.purl.org/ontolink/tawny#name> "instantMessaging"@en
+    
+    SubClassOf: 
+        encryption:communicationSoftware
+    
+    
+Class: encryption:instantMessagingThreats
+
+    Annotations: 
+        rdfs:comment ""@en,
+        <http://www.purl.org/ontolink/tawny#name> "instantMessagingThreats"@en
+    
+    SubClassOf: 
+        encryption:applicationThreats
+    
+    
+Class: encryption:logFilesTampering
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "logFilesTampering"@en
+    
+    SubClassOf: 
+        encryption:tampering
+    
+    DisjointWith: 
+        encryption:storageTampering
+    
+    
+Class: encryption:malware
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "malware"@en,
+        rdfs:comment "software that is intentionally included or inserted in a system for a harmful purpose"@en
+    
+    SubClassOf: 
+        encryption:threats
+    
+    
+Class: encryption:message
+
+    Annotations: 
+        rdfs:comment "a message is a bit of data, which is sent by a sender, to a recipient"@en,
+        <http://www.purl.org/ontolink/tawny#name> "message"@en
+    
+    
+Class: encryption:participantDisclosure
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "participantDisclosure"@en
+    
+    SubClassOf: 
+        encryption:infDisclosure
+    
+    
+Class: encryption:publicKeyEncryption
+
+    Annotations: 
+        rdfs:comment "is a cryptographic system that uses pairs of keys. Each pair consists of a public key and a private key"@en,
+        <http://www.purl.org/ontolink/tawny#name> "publicKeyEncryption"@en
+    
+    SubClassOf: 
+        encryption:asymmetric
+    
+    
+Class: encryption:repudiation
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "repudiation"@en,
+        rdfs:comment ""@en
+    
+    SubClassOf: 
+        encryption:threats
+    
+    
+Class: encryption:skype
+
+    Annotations: 
+        rdfs:comment ""@en,
+        <http://www.purl.org/ontolink/tawny#name> "skype"@en
+    
+    SubClassOf: 
+        encryption:conferencApp
+    
+    
+Class: encryption:software
+
+    Annotations: 
+        rdfs:comment ""@en,
+        <http://www.purl.org/ontolink/tawny#name> "software"@en
+    
+    
+Class: encryption:spoofing
+
+    Annotations: 
+        rdfs:comment ""@en,
+        <http://www.purl.org/ontolink/tawny#name> "spoofing"@en
+    
+    SubClassOf: 
+        encryption:threats
+    
+    
+Class: encryption:storageTampering
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "storageTampering"@en
+    
+    SubClassOf: 
+        encryption:tampering
+    
+    DisjointWith: 
+        encryption:logFilesTampering
+    
+    
+Class: encryption:symmetric
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "symmetric"@en,
+        rdfs:comment " is a type of encryption where only one key (a secret key) is used to both encrypt and decrypt electronic information "@en
+    
+    SubClassOf: 
+        encryption:encryptionTypes
+    
+    DisjointWith: 
+        encryption:asymmetric
+    
+    
+Class: encryption:tampering
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "tampering"@en,
+        rdfs:comment ""@en
+    
+    SubClassOf: 
+        encryption:threats
+    
+    
+Class: encryption:teams
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "teams"@en,
+        rdfs:comment ""@en
+    
+    SubClassOf: 
+        encryption:conferencApp
+    
+    
+Class: encryption:telegram
+
+    Annotations: 
+        rdfs:comment ""@en,
+        <http://www.purl.org/ontolink/tawny#name> "telegram"@en
+    
+    SubClassOf: 
+        encryption:instantMessaging
+    
+    
+Class: encryption:threats
+
+    Annotations: 
+        rdfs:comment "potential cause of an unwanted incident, which may result in harm to a system or organization"@en,
+        <http://www.purl.org/ontolink/tawny#name> "threats"@en
+    
+    
+Class: encryption:unauthorizedAccess
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "unauthorizedAccess"@en
+    
+    SubClassOf: 
+        encryption:escalationOfPrivilege
+    
+    DisjointWith: 
+        encryption:unauthorizedAdminPrivileg
+    
+    
+Class: encryption:unauthorizedAdminPrivileg
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "unauthorizedAdminPrivileg"@en
+    
+    SubClassOf: 
+        encryption:escalationOfPrivilege
+    
+    DisjointWith: 
+        encryption:unauthorizedAccess
+    
+    
+Class: encryption:whatsApp
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "whatsApp"@en,
+        rdfs:comment ""@en
+    
+    SubClassOf: 
+        encryption:instantMessaging
+    
+    
+Class: encryption:zoom
+
+    Annotations: 
+        rdfs:comment ""@en,
+        <http://www.purl.org/ontolink/tawny#name> "zoom"@en
+    
+    SubClassOf: 
+        encryption:conferencApp
+    
+    
+Class: encryption:zoomBombing
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "zoomBombing"@en,
+        rdfs:comment "refers to the unwanted, disruptive intrusion, generally by Internet trolls, into a video-conference call"@en
+    
+    SubClassOf: 
+        encryption:conferenceAppThreats,
+        encryption:isThreating some encryption:conferencApp
+    
+    
+DisjointClasses: 
+    encryption:ActionSpoofing,encryption:contentSpoofing,encryption:deviceSpoofing
+
+DisjointClasses: 
+    encryption:callDataDisclosure,encryption:deviceDisclosure,encryption:participantDisclosure
+
+DisjointClasses: 
+    encryption:conferencApp,encryption:email,encryption:instantMessaging
+
+DisjointClasses: 
+    encryption:conferenceAppThreats,encryption:emailThreats,encryption:instantMessagingThreats
+

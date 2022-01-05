@@ -1,0 +1,711 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.russet.org.uk/encryptiontech/encryption"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.russet.org.uk/encryptiontech/encryption">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="encryption" IRI="http://www.russet.org.uk/encryptiontech/encryption#"/>
+    <Import>http://www.purl.org/ontolink/tawny</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">encryption</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describing encryption technique for messaging services</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#storageTampering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#teams"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#escalationOfPrivilege"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#zoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DoS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#whatsApp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DDoS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#message"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#applicationThreats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#emailThreats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#logFilesTampering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#spoofing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deviceSpoofing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#participantDisclosure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#telegram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#conferencApp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#repudiation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#malware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#threats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#asymmetric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActionSpoofing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#encryptionTypes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#conferenceAppThreats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#facebookMessanger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unauthorizedAdminPrivileg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#infDisclosure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#symmetric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unauthorizedAccess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tampering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#communicationSoftware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#callDataDisclosure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isThreating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#zoomBombing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#instantMessaging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#denialOfService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#instantMessagingThreats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#publicKeyEncryption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#contentSpoofing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#contentRepudiation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deviceDisclosure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#skype"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#activityRepudiation"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ActionSpoofing"/>
+        <Class IRI="#spoofing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DDoS"/>
+        <Class IRI="#denialOfService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DoS"/>
+        <Class IRI="#denialOfService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#activityRepudiation"/>
+        <Class IRI="#repudiation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#asymmetric"/>
+        <Class IRI="#encryptionTypes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#callDataDisclosure"/>
+        <Class IRI="#infDisclosure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#conferencApp"/>
+        <Class IRI="#communicationSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#conferenceAppThreats"/>
+        <Class IRI="#applicationThreats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#contentRepudiation"/>
+        <Class IRI="#repudiation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#contentSpoofing"/>
+        <Class IRI="#spoofing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#denialOfService"/>
+        <Class IRI="#threats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deviceDisclosure"/>
+        <Class IRI="#infDisclosure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deviceSpoofing"/>
+        <Class IRI="#spoofing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#email"/>
+        <Class IRI="#communicationSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#emailThreats"/>
+        <Class IRI="#applicationThreats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#escalationOfPrivilege"/>
+        <Class IRI="#threats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#facebookMessanger"/>
+        <Class IRI="#instantMessaging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#infDisclosure"/>
+        <Class IRI="#threats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#instantMessaging"/>
+        <Class IRI="#communicationSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#instantMessagingThreats"/>
+        <Class IRI="#applicationThreats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#logFilesTampering"/>
+        <Class IRI="#tampering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#malware"/>
+        <Class IRI="#threats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#participantDisclosure"/>
+        <Class IRI="#infDisclosure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#publicKeyEncryption"/>
+        <Class IRI="#asymmetric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#repudiation"/>
+        <Class IRI="#threats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#skype"/>
+        <Class IRI="#conferencApp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#spoofing"/>
+        <Class IRI="#threats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#storageTampering"/>
+        <Class IRI="#tampering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#symmetric"/>
+        <Class IRI="#encryptionTypes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tampering"/>
+        <Class IRI="#threats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#teams"/>
+        <Class IRI="#conferencApp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#telegram"/>
+        <Class IRI="#instantMessaging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unauthorizedAccess"/>
+        <Class IRI="#escalationOfPrivilege"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unauthorizedAdminPrivileg"/>
+        <Class IRI="#escalationOfPrivilege"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#whatsApp"/>
+        <Class IRI="#instantMessaging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#zoom"/>
+        <Class IRI="#conferencApp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#zoomBombing"/>
+        <Class IRI="#conferenceAppThreats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#zoomBombing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isThreating"/>
+            <Class IRI="#conferencApp"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ActionSpoofing"/>
+        <Class IRI="#contentSpoofing"/>
+        <Class IRI="#deviceSpoofing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DDoS"/>
+        <Class IRI="#DoS"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#activityRepudiation"/>
+        <Class IRI="#contentRepudiation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#asymmetric"/>
+        <Class IRI="#symmetric"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#callDataDisclosure"/>
+        <Class IRI="#deviceDisclosure"/>
+        <Class IRI="#participantDisclosure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#conferencApp"/>
+        <Class IRI="#email"/>
+        <Class IRI="#instantMessaging"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#conferenceAppThreats"/>
+        <Class IRI="#emailThreats"/>
+        <Class IRI="#instantMessagingThreats"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#logFilesTampering"/>
+        <Class IRI="#storageTampering"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#unauthorizedAccess"/>
+        <Class IRI="#unauthorizedAdminPrivileg"/>
+    </DisjointClasses>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#ActionSpoofing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ActionSpoofing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#DDoS</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DDoS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#DoS</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DoS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#activityRepudiation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">activityRepudiation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#applicationThreats</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">applicationThreats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#applicationThreats</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Threats relating to discrete software vulnerabilities residing within mobile applications running atop the mobile operating system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#asymmetric</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">asymmetric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#asymmetric</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Asymmetric Encryption encrypts and decrypts the data using two separate yet mathematically connected cryptographic keys </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#callDataDisclosure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">callDataDisclosure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#communicationSoftware</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">communicationSoftware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#conferencApp</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">conferencApp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#conferencApp</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#conferenceAppThreats</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">conferenceAppThreats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#conferenceAppThreats</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#contentRepudiation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">contentRepudiation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#contentSpoofing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">contentSpoofing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#denialOfService</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">denialOfService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#denialOfService</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#deviceDisclosure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">deviceDisclosure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#deviceSpoofing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">deviceSpoofing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#email</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#email</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is a method of exchanging messages between people using electronic devices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#emailThreats</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">emailThreats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#emailThreats</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#encryptionTypes</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">encryptionTypes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#escalationOfPrivilege</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">escalationOfPrivilege</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#escalationOfPrivilege</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#facebookMessanger</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">facebookMessanger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#facebookMessanger</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#infDisclosure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">infDisclosure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#infDisclosure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#instantMessaging</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">instantMessaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#instantMessaging</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is a type of online chat allowing real-time text transmission over the Internet or another computer network</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#instantMessagingThreats</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">instantMessagingThreats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#instantMessagingThreats</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#isThreating</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">isThreating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#logFilesTampering</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">logFilesTampering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#malware</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">malware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#malware</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">software that is intentionally included or inserted in a system for a harmful purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#message</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">message</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#message</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a message is a bit of data, which is sent by a sender, to a recipient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#participantDisclosure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">participantDisclosure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#publicKeyEncryption</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">publicKeyEncryption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#publicKeyEncryption</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is a cryptographic system that uses pairs of keys. Each pair consists of a public key and a private key</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#repudiation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">repudiation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#repudiation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#skype</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">skype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#skype</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#software</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#software</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#spoofing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spoofing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#spoofing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#storageTampering</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">storageTampering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#symmetric</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">symmetric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#symmetric</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"> is a type of encryption where only one key (a secret key) is used to both encrypt and decrypt electronic information </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#tampering</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tampering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tampering</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#teams</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">teams</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#teams</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#telegram</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">telegram</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#telegram</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#threats</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">threats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#threats</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">potential cause of an unwanted incident, which may result in harm to a system or organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#unauthorizedAccess</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">unauthorizedAccess</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#unauthorizedAdminPrivileg</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">unauthorizedAdminPrivileg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#whatsApp</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">whatsApp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#whatsApp</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#zoom</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">zoom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#zoom</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#zoomBombing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">zoomBombing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#zoomBombing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">refers to the unwanted, disruptive intrusion, generally by Internet trolls, into a video-conference call</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

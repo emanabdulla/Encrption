@@ -26,7 +26,7 @@
  (defclass instantMessaging
    :comment "is a type of online chat allowing real-time text transmission over the Internet or another computer network")
  (defclass conferencApp
-   :comment ""))
+     :comment ""))
 
 (defclass whatsApp
   :super instantMessaging
@@ -87,50 +87,50 @@ spoofing
 
 
 (defclass tampering
-:super threats
-:comment "")
+  :super threats
+  :comment "")
 
 (as-subclasses
-tampering
-:disjoint 
-(defclass storageTampering)
-(defclass logFilesTampering))
+ tampering
+ :disjoint 
+ (defclass storageTampering)
+ (defclass logFilesTampering))
 
 (defclass repudiation
-:super threats
-:comment "")
+  :super threats
+  :comment "")
 
 (as-subclasses
-repudiation
-:disjoint 
-(defclass contentRepudiation)
-(defclass activityRepudiation))
+ repudiation
+ :disjoint 
+ (defclass contentRepudiation)
+ (defclass activityRepudiation))
 
 
 (defclass infDisclosure
-:super threats
-:comment "")
+  :super threats
+  :comment "")
 
 (as-subclasses
  infDisclosure
-:disjoint
-(defclass participantDisclosure)
-(defclass deviceDisclosure)
-(defclass callDataDisclosure))
+ :disjoint
+ (defclass participantDisclosure)
+ (defclass deviceDisclosure)
+ (defclass callDataDisclosure))
 
 (defclass denialOfService
-:super threats
-:comment "")
+  :super threats
+  :comment "")
 
 (as-subclasses
  denialOfService
-:disjoint
-(defclass DoS)
-(defclass DDoS))
+ :disjoint
+ (defclass DoS)
+ (defclass DDoS))
 
 (defclass escalationOfPrivilege
-:super threats
-:comment "")
+  :super threats
+  :comment "")
 
 (as-subclasses
  escalationOfPrivilege
@@ -139,12 +139,11 @@ repudiation
 (defclass unauthorizedAccess))
 
 
-
-
 (defclass malware
 :super threats
    :comment "software that is intentionally included or inserted in a system for a harmful purpose")
- 
+
+(defclass mitigation) 
 
 
 
@@ -164,3 +163,5 @@ repudiation
   :comment "is a cryptographic system that uses pairs of keys. Each pair consists of a public key and a private key"
   :super asymmetric)
 
+(save-ontology "encryption.omn" :omn)
+(save-ontology "encryption.owl" :owl)
