@@ -15,7 +15,7 @@
 (defclass message
   :comment "a message is a bit of data, which is sent by a sender, to a recipient")
 (defclass software
-:comment "")
+  :comment "")
 
 (defclass communicationSoftware)
 (as-subclasses
@@ -25,25 +25,60 @@
    :comment "is a method of exchanging messages between people using electronic devices")
  (defclass instantMessaging
    :comment "is a type of online chat allowing real-time text transmission over the Internet or another computer network")
-(defclass conferencApp
-:comment ""))
+ (defclass conferencApp
+   :comment ""))
+
+(defclass whatsApp
+  :super instantMessaging
+  :comment "")
+(defclass facebookMessanger
+  :super instantMessaging
+  :comment "")
+(defclass telegram
+  :super instantMessaging
+  :comment "")
+
+(defclass zoom
+  :super conferencApp
+  :comment "")
+(defclass teams
+  :super  conferencApp
+  :comment "")
+(defclass skype
+  :super  conferencApp
+  :comment "")
+
 
 (defclass threats
   :comment "potential cause of an unwanted incident, which may result in harm to a system or organization")
+
+
+ (defclass applicationThreats
+   :comment "Threats relating to discrete software vulnerabilities residing within mobile applications running atop the mobile operating system")
 (as-subclasses
- threats
+ applicationThreats
  :disjoint
- 
-(defclass appThreats
-:comment ""))
+
+ (defclass conferenceAppThreats
+   
+   :comment "")
+ (defclass instantMessagingThreats
+   
+   :comment "")
+ (defclass emailThreats
+   
+   :comment ""))
+
+
+(defclass zoomBombing
+:comment "refers to the unwanted, disruptive intrusion, generally by Internet trolls, into a video-conference call")
+
 
 
 
 (defclass malware
    :comment "software that is intentionally included or inserted in a system for a harmful purpose")
- (defclass zoomBombing
-:comment "refers to the unwanted, disruptive intrusion, generally by Internet trolls, into a video-conference call")
-
+ 
 
 
 
