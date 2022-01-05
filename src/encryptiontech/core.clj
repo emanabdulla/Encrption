@@ -4,4 +4,4 @@
 
 
 (defn -main [& args]
-  (save-ontology encryptiontech.encryptiontech/encryptiontech "encryptiontech.omn"))
+  (save-ontology encryptiontech.encryptiontech/encryption "encryptiontech.omn"))
